@@ -1,14 +1,14 @@
-#ifndef TRAINEDINJA_HPP
-#define TRAINEDINJA_HPP
+#ifndef YOUNTNINJA_HPP
+#define YOUNTNINJA_HPP
 #include <iostream>
 #include <string>
 #include "Ninja.hpp"
 using namespace std;
      
 namespace ariel {
-    class TrainedNinja : public Ninja { 
+    class YountNinja : public Ninja { 
         public:
-            TrainedNinja(string name, Point location);
+        YountNinja(string name, Point location);
 
 
 

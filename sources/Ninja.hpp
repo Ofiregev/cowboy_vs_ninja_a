@@ -6,14 +6,15 @@
 using namespace std;
      
 namespace ariel {
-    class Ninja : protected Character {
+    class Ninja : public Character {
         private:
             int speed;
             
         public:
+            Ninja(Point loc,int score,string name);
             void setSpeed(int s);
-            friend void move(Character& enemy);
-            friend void slash(Character& enemy);
+            void move(Character* enemy);
+            void slash(Character* enemy);
             void print();
 
 

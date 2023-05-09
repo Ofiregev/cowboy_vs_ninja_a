@@ -11,7 +11,7 @@ namespace ariel {
             double point_y;
         public:
             Point(double x, double y);
-            friend double distance(Point p);
+            double distance(Point p);
             void print();
             friend Point moveTowards(Point dest, double distance); 
 
