@@ -16,6 +16,7 @@ namespace ariel {
             Character members[10];
             Character& team_leader;
         public:
+            
             Team(Character *leader);
             void add(Character* warrier);
             void attack(Team * enemies);

@@ -12,6 +12,7 @@ namespace ariel {
             int score;
             string name;
         public:
+            Character() : location(0, 0), score(0), name("") {}
             Character(Point loc, int score, string name);
             bool isAlive();
             double distance (const Character& player);
@@ -19,6 +20,9 @@ namespace ariel {
             string getName();
             Point getLocation();
             virtual void print(); 
+            int getScore();
+            void setLocation(Point loc);
+
 
 
     };
